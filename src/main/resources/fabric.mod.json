@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "quebecmod1",
+  "version": "${version}",
+  "name": "QuebecMod1",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/quebecmod1/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "github.com.quebecmod1.client.Quebecmod1DataGenerator"
+    ],
+    "client": [
+      "github.com.quebecmod1.client.Quebecmod1Client"
+    ],
+    "main": [
+      "github.com.quebecmod1.Quebecmod1"
+    ]
+  },
+  "mixins": [
+    "quebecmod1.mixins.json",
+    {
+      "config": "quebecmod1.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
