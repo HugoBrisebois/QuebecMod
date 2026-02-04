@@ -1,10 +1,7 @@
-package github.com.quebecmod1.client;
+package github.com.quebecmod1;
 
-import net.fabricmc.api.ClientModInitializer;
+import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.util.Identifier;
 
-public class Quebecmod1Client implements ClientModInitializer {
-
-    @Override
-    public void onInitializeClient() {
-    }
-}
